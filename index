@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="ICEMAN CODE LEARN — learn, build, and explore code.">
+  <title>ICEMAN CODE LEARN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <button class="brand" data-page="home" aria-label="ICEMAN CODE LEARN home"><span class="brand-mark">❄</span><span><b>ICEMAN</b><small>CODE LEARN</small></span></button>
+    <div class="top-actions"><span class="status-pill"><i></i> LEARNING MODE</span><button class="icon-btn" id="themeBtn" aria-label="Change theme">◐</button><button class="icon-btn" id="menuBtn" aria-label="Open menu">☰</button></div>
+  </header>
+  <aside class="sidebar" id="sidebar">
+    <div class="side-label">WORKSPACE</div>
+    <button class="nav-link active" data-page="home"><span>⌂</span> Dashboard</button>
+    <button class="nav-link" data-page="ai"><span>✧</span> AI Center</button>
+    <button class="nav-link" data-page="academy"><span>⌘</span> Coding Academy</button>
+    <button class="nav-link" data-page="terminal"><span>▣</span> Universal Terminal</button>
+    <button class="nav-link" data-page="converter"><span>⇄</span> Code Converter</button>
+    <button class="nav-link" data-page="safety"><span>⬡</span> Safety Center</button>
+    <button class="nav-link" data-page="analyzer"><span>⌕</span> File & Media Analyzer</button>
+    <button class="nav-link" data-page="workspace"><span>▤</span> Code Workspace</button>
+    <button class="nav-link" data-page="labs"><span>◉</span> Interactive Labs</button>
+    <button class="nav-link" data-page="progress"><span>↗</span> My Learning</button>
+    <button class="nav-link" data-page="wallpapers"><span>✺</span> Live Wallpapers</button>
+    <button class="nav-link" data-page="github"><span>⌥</span> GitHub</button>
+    <div class="sidebar-bottom"><div class="mini-ice">❄</div><b>Keep building.</b><p>Small steps. Real skills.</p><span class="local-note">Your browser demo stores selected settings locally.</span></div>
+  </aside>
+  <main class="main" id="main">
+    <section class="page active" id="page-home">
+      <div class="hero">
+        <div class="hero-copy"><div class="eyebrow">YOUR PERSONAL CODING SPACE</div><h1>Build something<br><span>extraordinary.</span></h1><p>Learn code, explore tools, and turn your ideas into real projects — one step at a time.</p><div class="hero-actions"><button class="btn primary" data-page="academy">Start learning <span>↗</span></button><button class="btn secondary" data-page="workspace">Open workspace</button></div></div>
+        <div class="hero-orb"><div class="orb-ring ring-a"></div><div class="orb-ring ring-b"></div><div class="orb-core">❄</div><span class="orb-tag tag-one">CODE</span><span class="orb-tag tag-two">CREATE</span><span class="orb-tag tag-three">LEARN</span></div>
+      </div>
+      <div class="section-heading"><div><div class="eyebrow">QUICK ACCESS</div><h2>Your AI toolkit</h2></div><span class="muted">4 assistants · separate roles</span></div>
+      <div class="cards four">
+        <button class="feature-card" data-page="ai" data-tool="assistant"><span class="card-icon blue">✧</span><b>ICEMAN AI Assistant</b><p>Ask questions, brainstorm, write, and learn concepts.</p><span class="card-foot">General AI <i>↗</i></span></button>
+        <button class="feature-card" data-page="ai" data-tool="builder"><span class="card-icon purple">⌘</span><b>ICEMAN AI Builder</b><p>Create, debug, explain, and improve your code.</p><span class="card-foot">Build projects <i>↗</i></span></button>
+        <button class="feature-card" data-page="ai" data-tool="teacher"><span class="card-icon green">▣</span><b>ICEMAN AI Teacher</b><p>Step-by-step lessons, quizzes, and practice.</p><span class="card-foot">Learn by doing <i>↗</i></span></button>
+        <button class="feature-card" data-page="ai" data-tool="github-reader"><span class="card-icon orange">⌥</span><b>GitHub Reader AI</b><p>Understand repository files and setup steps.</p><span class="card-foot">Read source code <i>↗</i></span></button>
+      </div>
+      <div class="section-heading"><div><div class="eyebrow">TOOLS & ENVIRONMENTS</div><h2>Make it happen</h2></div></div>
+      <div class="cards three">
+        <button class="tool-card" data-page="terminal"><span class="tool-symbol">▣</span><div><b>Universal Terminal</b><p>Terminal connection panel for local or online Linux.</p></div><span class="arrow">↗</span></button>
+        <button class="tool-card" data-page="converter"><span class="tool-symbol">⇄</span><div><b>Code Converter</b><p>Explore code conversion with clear limitations.</p></div><span class="arrow">↗</span></button>
+        <button class="tool-card" data-page="safety"><span class="tool-symbol">⬡</span><div><b>Safety Center</b><p>Review suspicious links and risky code patterns.</p></div><span class="arrow">↗</span></button>
+        <button class="tool-card" data-page="analyzer"><span class="tool-symbol">⌕</span><div><b>File & Media Analyzer</b><p>Choose local files and view their basic details.</p></div><span class="arrow">↗</span></button>
+        <button class="tool-card" data-page="workspace"><span class="tool-symbol">▤</span><div><b>Code Workspace</b><p>Write, run safe browser demos, and save snippets.</p></div><span class="arrow">↗</span></button>
+        <button class="tool-card" data-page="labs"><span class="tool-symbol">◉</span><div><b>Interactive Labs</b><p>Maps, programming, and safe security exercises.</p></div><span class="arrow">↗</span></button>
+      </div>
+      <div class="bottom-grid"><div class="panel learning-panel"><div class="panel-top"><div><div class="eyebrow">YOUR JOURNEY</div><h3>Learning snapshot</h3></div><span class="tag">DEMO DATA</span></div><div class="snapshot"><div><strong id="projectCount">0</strong><span>Saved snippets</span></div><div><strong id="lessonCount">1</strong><span>Starter lesson</span></div><div><strong>∞</strong><span>Ideas to build</span></div></div><div class="progress-line"><span></span></div><p class="muted small">Start with the HTML lesson and save your first snippet.</p></div><div class="panel quote-panel"><div class="quote-mark">“</div><h3>Every expert was once a beginner.</h3><p>Practice a little. Build often. Keep going.</p><button class="text-button" data-page="academy">Choose a lesson →</button></div></div>
+    </section>
+
+    <section class="page" id="page-ai">
+      <div class="page-title"><div class="eyebrow">AI CENTER</div><h1>Choose your assistant.</h1><p>Each tool has a different purpose. AI responses require a real provider connection, which is not configured in this front-end demo.</p></div>
+      <div class="tool-tabs" id="aiTabs"><button class="tab active" data-ai="assistant">AI Assistant</button><button class="tab" data-ai="builder">AI Builder</button><button class="tab" data-ai="teacher">AI Teacher</button><button class="tab" data-ai="github-reader">GitHub Reader</button></div>
+      <div class="panel ai-panel"><div class="ai-intro"><span class="card-icon blue" id="aiIcon">✧</span><div><div class="eyebrow" id="aiEyebrow">GENERAL PURPOSE</div><h2 id="aiTitle">ICEMAN AI Assistant</h2><p id="aiDescription">Ask a question or describe what you need help with.</p></div></div><label for="aiPrompt">Your request</label><textarea id="aiPrompt" rows="5" placeholder="Type a question, project idea, or coding problem…"></textarea><div class="row-wrap"><select id="aiMode" aria-label="Assistant mode"><option>Explain simply</option><option>Give steps</option><option>Show an example</option><option>Review my idea</option></select><button class="btn primary" id="aiSend">Prepare request ↗</button></div><div class="notice" id="aiOutput" aria-live="polite">Ready. This demo can prepare your prompt, but it does not send it to an AI service.</div><div class="prompt-chips"><button data-prompt="Teach me HTML from the beginning with a tiny exercise.">Teach me HTML</button><button data-prompt="Help me find and explain the bug in this code:">Fix my code</button><button data-prompt="Explain how to understand a GitHub repository on Android.">Read a repository</button></div></div>
+      <div class="notice warning">Privacy tip: do not paste passwords, API keys, session folders, private tokens, or other secrets into AI tools.</div>
+    </section>
+
+    <section class="page" id="page-academy">
+      <div class="page-title"><div class="eyebrow">CODING ACADEMY</div><h1>Learn by building.</h1><p>Beginner-friendly paths with a short explanation and practice activity.</p></div>
+      <div class="cards three" id="lessonCards">
+        <button class="lesson-card" data-lesson="html"><span class="lesson-number">01</span><b>HTML foundations</b><p>Build the structure of a web page.</p><span class="lesson-meta">Beginner · 10 min</span></button>
+        <button class="lesson-card" data-lesson="css"><span class="lesson-number">02</span><b>CSS styling</b><p>Give your page layout, colors, and personality.</p><span class="lesson-meta">Beginner · 15 min</span></button>
+        <button class="lesson-card" data-lesson="javascript"><span class="lesson-number">03</span><b>JavaScript basics</b><p>Make buttons and pages interactive.</p><span class="lesson-meta">Beginner · 15 min</span></button>
+        <button class="lesson-card" data-lesson="python"><span class="lesson-number">04</span><b>Python starter</b><p>Learn variables, print, and simple logic.</p><span class="lesson-meta">Beginner · 15 min</span></button>
+        <button class="lesson-card" data-lesson="linux"><span class="lesson-number">05</span><b>Linux terminal</b><p>Understand folders, files, and safe commands.</p><span class="lesson-meta">Beginner · 12 min</span></button>
+        <button class="lesson-card" data-lesson="security"><span class="lesson-number">06</span><b>Security basics</b><p>Practice defensive security with safe examples.</p><span class="lesson-meta">Beginner · 12 min</span></button>
+      </div>
+      <div class="panel lesson-detail" id="lessonDetail"><div class="eyebrow">START HERE</div><h2>HTML: your first page</h2><p>HTML describes the structure of a webpage. A heading uses <code>&lt;h1&gt;</code>, a paragraph uses <code>&lt;p&gt;</code>, and a link uses <code>&lt;a&gt;</code>.</p><pre><code>&lt;h1&gt;Hello, ICEMAN!&lt;/h1&gt;
+&lt;p&gt;I am learning to code.&lt;/p&gt;</code></pre><button class="btn primary" id="completeLesson">Mark lesson complete ✓</button><span id="lessonFeedback" class="muted small"></span></div>
+    </section>
+
+    <section class="page" id="page-terminal">
+      <div class="page-title"><div class="eyebrow">UNIVERSAL TERMINAL</div><h1>Connect your environment.</h1><p>This panel is not a shell by itself. Browser JavaScript cannot install Termux packages or run arbitrary Linux commands without a separate, secured connection.</p></div>
+      <div class="cards three"><div class="panel"><span class="card-icon blue">▣</span><h3>Local Termux</h3><p>Run commands on your phone through a small local service you control.</p><span class="tag">CONNECTION REQUIRED</span></div><div class="panel"><span class="card-icon green">⌘</span><h3>Online Linux</h3><p>Connect a hosted container or VM. Free services can have quotas or sleep.</p><span class="tag">HOST REQUIRED</span></div><div class="panel"><span class="card-icon purple">⬡</span><h3>Kali learning mode</h3><p>Practice defensive security against lab targets you own or are authorized to test.</p><span class="tag">LAB ONLY</span></div></div>
+      <div class="panel terminal-panel"><div class="terminal-head"><div><i></i><i></i><i></i><b>ICEMAN · CONNECTION CHECK</b></div><span class="tag">DISCONNECTED</span></div><div class="terminal-screen" id="terminalOutput"><p class="terminal-muted">ICEMAN Universal Terminal UI</p><p>Choose a sample command below to understand the setup.</p><p class="terminal-muted">This panel will not execute system commands.</p></div><div class="terminal-controls"><input id="terminalCommand" placeholder="Example: pwd" aria-label="Sample command"><button class="btn primary" id="terminalTry">Preview</button></div><div class="quick-commands"><button data-command="pwd">pwd</button><button data-command="ls">ls</button><button data-command="python --version">python --version</button><button data-command="pkg list-installed">pkg list-installed</button></div></div>
+    </section>
+
+    <section class="page" id="page-converter">
+      <div class="page-title"><div class="eyebrow">DEVELOPER TOOL</div><h1>Code Converter.</h1><p>Simple educational templates for common conversions. Complex programs need a real parser and manual review.</p></div>
+      <div class="panel"><div class="converter-controls"><label>From<select id="fromLang"><option value="html">HTML</option><option value="javascript">JavaScript</option><option value="python">Python</option></select></label><label>To<select id="toLang"><option value="javascript">JavaScript</option><option value="html">HTML</option><option value="python">Python</option></select></label></div><label for="convertInput">Source code</label><textarea id="convertInput" rows="7" spellcheck="false" placeholder="Paste a small code example…"></textarea><button class="btn primary" id="convertBtn">Convert sample ↗</button><label for="convertOutput">Output</label><textarea id="convertOutput" rows="7" readonly spellcheck="false" placeholder="Converted example appears here…"></textarea><button class="btn secondary" id="copyConvert">Copy output</button><p class="muted small" id="convertStatus" aria-live="polite">Local educational templates only. Not a full compiler.</p></div>
+    </section>
+
+    <section class="page" id="page-safety">
+      <div class="page-title"><div class="eyebrow">SAFETY CENTER</div><h1>Review before you run.</h1><p>Basic local pattern checks can flag common risks, but cannot prove a link or program is safe.</p></div>
+      <div class="panel"><div class="safety-tabs"><button class="tab active" data-safety="code">Code review</button><button class="tab" data-safety="link">Link review</button></div><div id="codeSafety"><label for="safetyInput">Paste a small code snippet</label><textarea id="safetyInput" rows="7" spellcheck="false" placeholder="Paste code you want to review…"></textarea><button class="btn primary" id="checkCode">Check patterns</button></div><div id="linkSafety" hidden><label for="linkInput">Paste a URL</label><input id="linkInput" placeholder="https://example.com"><button class="btn primary" id="checkLink">Review URL format</button></div><div id="safetyResults" class="notice" aria-live="polite">Checks run locally in your browser. No reputation database is connected.</div></div>
+    </section>
+
+    <section class="page" id="page-analyzer">
+      <div class="page-title"><div class="eyebrow">FILE & MEDIA ANALYZER</div><h1>Inspect a local file.</h1><p>Select a file to see basic metadata. This demo does not upload files or perform AI image/video analysis.</p></div>
+      <div class="panel upload-panel"><div class="upload-symbol">↑</div><h2>Choose files from your device</h2><p>Source files, ZIPs, text, images, PDFs, and videos can be selected for basic browser-side details.</p><input type="file" id="fileInput" multiple><div id="fileResults" class="file-results"><p class="muted">No files selected.</p></div><div class="notice warning">Avoid selecting private keys, passwords, authentication folders, or confidential files. File size and format support depends on your browser.</div></div>
+    </section>
+
+    <section class="page" id="page-workspace">
+      <div class="page-title"><div class="eyebrow">CODE WORKSPACE</div><h1>Your pocket editor.</h1><p>Write a small HTML, CSS, or JavaScript example and preview it safely in a sandboxed frame.</p></div>
+      <div class="workspace-layout"><div class="panel editor-panel"><div class="editor-toolbar"><select id="editorLang" aria-label="Editor language"><option value="html">HTML</option><option value="css">CSS</option><option value="javascript">JavaScript</option></select><button class="text-button" id="saveSnippet">Save snippet</button><button class="text-button" id="runPreview">Preview</button></div><textarea id="codeEditor" spellcheck="false" aria-label="Code editor"><!doctype html>
+<html>
+<body style="font-family: sans-serif; padding: 24px">
+  <h1>Hello, ICEMAN!</h1>
+  <p>My first web project.</p>
+  <button onclick="document.querySelector('p').textContent='You made it interactive!'">Click me</button>
+</body>
+</html></textarea><div class="editor-footer"><span id="editorStatus">Ready</span><button class="text-button" id="copySnippet">Copy code</button></div></div><div class="panel preview-panel"><div class="panel-top"><h3>Preview</h3><span class="tag">SANDBOXED</span></div><iframe id="previewFrame" title="Code preview" sandbox="allow-scripts" srcdoc="<p style='font-family:sans-serif;padding:16px'>Your preview will appear here.</p>"></iframe></div></div>
+      <div class="panel saved-panel"><div class="panel-top"><h3>Saved snippets</h3><button class="text-button" id="exportSnippets">Export JSON ↓</button></div><div id="savedSnippets"><p class="muted">No snippets saved yet.</p></div></div>
+    </section>
+
+    <section class="page" id="page-labs">
+      <div class="page-title"><div class="eyebrow">INTERACTIVE LABS</div><h1>Practice in a safe space.</h1><p>Small demonstrations designed for learning, not for attacking real systems.</p></div>
+      <div class="cards three"><button class="feature-card" data-lab="maps"><span class="card-icon blue">◎</span><b>Interactive Map Lab</b><p>Explore map coordinates and learn how web maps work.</p><span class="card-foot">Open lab <i>↗</i></span></button><button class="feature-card" data-lab="security"><span class="card-icon green">⬡</span><b>Cybersecurity Basics</b><p>Learn URL hygiene, hashing concepts, and defensive checks.</p><span class="card-foot">Open lab <i>↗</i></span></button><button class="feature-card" data-lab="python"><span class="card-icon purple">⌘</span><b>Programming Practice</b><p>Try small logic exercises and inspect the result.</p><span class="card-foot">Open lab <i>↗</i></span></button></div>
+      <div class="panel lab-detail" id="labDetail"><div class="eyebrow">PROGRAMMING PRACTICE</div><h2>What does this print?</h2><pre><code>name = "ICEMAN"
+print("Hello", name)</code></pre><div class="row-wrap"><button class="btn secondary" id="showLabAnswer">Show answer</button><span id="labAnswer" class="muted"></span></div><p class="muted small">Map lab note: a live OpenStreetMap/Leaflet map can be added with an internet connection. Browser geolocation must always ask the visitor for permission.</p></div>
+    </section>
+
+    <section class="page" id="page-progress">
+      <div class="page-title"><div class="eyebrow">MY LEARNING</div><h1>Progress that keeps you moving.</h1><p>This browser demo stores progress on this device only. It is not a cloud account or backup.</p></div>
+      <div class="cards three"><div class="panel stat-panel"><span class="card-icon blue">✓</span><strong id="completedCount">0</strong><b>Lessons completed</b><p>Every lesson is a step forward.</p></div><div class="panel stat-panel"><span class="card-icon purple">▤</span><strong id="snippetStat">0</strong><b>Saved snippets</b><p>Your local code collection.</p></div><div class="panel stat-panel"><span class="card-icon green">✺</span><strong id="wallpaperStat">1</strong><b>Theme selected</b><p>Make your workspace yours.</p></div></div>
+      <div class="panel"><div class="panel-top"><h3>Completed lessons</h3><button class="text-button" id="resetProgress">Reset progress</button></div><div id="completedLessons" class="muted">No lessons completed yet.</div></div>
+    </section>
+
+    <section class="page" id="page-wallpapers">
+      <div class="page-title"><div class="eyebrow">PERSONALIZATION</div><h1>Choose your atmosphere.</h1><p>Select one of the built-in animated color themes. Heavy video backgrounds are avoided to keep the site mobile-friendly.</p></div>
+      <div class="wallpaper-grid" id="wallpaperGrid">
+        <button class="wallpaper ice selected" data-wallpaper="ice"><span>❄</span><b>Ice Blue Flow</b></button><button class="wallpaper purple-bg" data-wallpaper="purple"><span>✧</span><b>Cyber Purple</b></button><button class="wallpaper matrix" data-wallpaper="matrix"><span>01</span><b>Matrix Rain</b></button><button class="wallpaper ocean" data-wallpaper="ocean"><span>≈</span><b>Deep Ocean</b></button><button class="wallpaper crimson" data-wallpaper="crimson"><span>⌁</span><b>Crimson Code</b></button><button class="wallpaper galaxy" data-wallpaper="galaxy"><span>✺</span><b>Cosmic Nebula</b></button><button class="wallpaper gold" data-wallpaper="gold"><span>⌘</span><b>Golden Circuit</b></button><button class="wallpaper chrome" data-wallpaper="chrome"><span>◈</span><b>Liquid Chrome</b></button>
+      </div><p class="muted small">The plan includes up to 100 themes; this starter includes 8 lightweight themes. Additional themes can be added later.</p>
+    </section>
+
+    <section class="page" id="page-github">
+      <div class="page-title"><div class="eyebrow">GITHUB INTEGRATION</div><h1>Your code, connected.</h1><p>Open GitHub in your browser to browse repositories, edit files, or review releases. A secure OAuth integration is not configured in this static starter.</p></div>
+      <div class="cards three"><a class="feature-card link-card" href="https://github.com/" target="_blank" rel="noopener noreferrer"><span class="card-icon blue">⌥</span><b>Open GitHub</b><p>Browse repositories and account projects.</p><span class="card-foot">github.com ↗</span></a><a class="feature-card link-card" href="https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files" target="_blank" rel="noopener noreferrer"><span class="card-icon green">▤</span><b>Edit files on phone</b><p>Learn how to edit repository files from a browser.</p><span class="card-foot">GitHub Docs ↗</span></a><a class="feature-card link-card" href="https://docs.github.com/en/repositories/releasing-projects-on-github" target="_blank" rel="noopener noreferrer"><span class="card-icon purple">↗</span><b>Releases</b><p>Understand versioned project releases.</p><span class="card-foot">GitHub Docs ↗</span></a></div>
+      <div class="panel"><label for="repoUrl">Public repository URL</label><input id="repoUrl" placeholder="https://github.com/owner/repository"><button class="btn primary" id="openRepo">Open repository ↗</button><p class="muted small">This opens a public repository in a new tab. Private repositories need secure authorization; never paste an access token here.</p></div>
+    </section>
+
+    <section class="page" id="page-owner">
+      <div class="page-title"><div class="eyebrow">OWNER CONTROLS</div><h1>Manage your learning site.</h1><p>Static demo controls are not a secure admin system. Real publishing and owner-only editing require server-side authentication.</p></div>
+      <div class="panel"><h2>Deployment checklist</h2><ul class="check-list"><li>Enable HTTPS on the hosting provider.</li><li>Keep private keys and provider tokens on the server, never in browser JavaScript.</li><li>Set up authenticated owner access before adding publish/delete actions.</li><li>Back up user content and test restore procedures.</li><li>Connect AI and terminal features only through secured backends.</li></ul><a class="btn secondary inline-btn" href="https://docs.github.com/" target="_blank" rel="noopener noreferrer">Read GitHub Docs ↗</a></div>
+    </section>
+    <footer class="footer"><span>❄ ICEMAN CODE LEARN</span><span>Learn · Build · Improve</span><button class="text-button" data-page="owner">Owner setup</button></footer>
+  </main>
+  <nav class="mobile-nav"><button class="active" data-page="home"><span>⌂</span>Home</button><button data-page="ai"><span>✧</span>AI</button><button data-page="academy"><span>⌘</span>Learn</button><button data-page="workspace"><span>▤</span>Code</button><button id="mobileMore"><span>☰</span>More</button></nav>
+  <script src="storage.js"></script><script src="ai.js"></script><script src="labs.js"></script><script src="app.js"></script>
+</body>
+</html>

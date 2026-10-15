@@ -1,0 +1,16 @@
+{
+  "name": "iceman-code-learn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ICEMAN CODE LEARN — mobile-first coding academy with secure Gemini backend",
+  "type": "module",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}
